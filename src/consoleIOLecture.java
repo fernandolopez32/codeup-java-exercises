@@ -15,6 +15,7 @@ public class consoleIOLecture {
 
         Scanner scanner = new Scanner(System.in);
 
+
         System.out.printf("Enter a number: %n");
         int userNumber = Integer.parseInt(scanner.nextLine());
 
