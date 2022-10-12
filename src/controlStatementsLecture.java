@@ -19,8 +19,8 @@ public class controlStatementsLecture {
         String customerChoice;
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("What flavor would you like");
-        customerChoice = sc.next().toLowerCase();
+//        System.out.println("What flavor would you like");
+//        customerChoice = sc.next().toLowerCase();
 //       traditional switch statement;
 //        switch (customerChoice) {
 //            case "vanilla":
@@ -46,13 +46,42 @@ public class controlStatementsLecture {
 //            default -> System.out.println("We don't have that");
 //        }
 
-        boolean existence = true;
-
-        if(existence) System.out.println("Yes");
+//        boolean existence = true;
+//
+//        if(existence) System.out.println("Yes");
 
 
         int c =0, d = 100, e = 50;
-        String word1, word2, word3;
+
+        // evaluation short circuits
+        if(c == 1 && e++ <100){
+        }
+        System.out.println("e = "+ e);
+
+        boolean existence = true;
+
+        int theAnswer = 42;
+        if(existence | theAnswer++ == 42){}
+        System.out.println(theAnswer);
+
+
+//        int i = 1;
+//        System.out.println("The loop hasn't started yet the value of i is " +i);
+//        while (i<10){
+//            System.out.println("now im in loop i has not incremented "+i);
+//            i++;
+//            System.out.println("im still in the loop i has increment and its value is " + i);
+//        }
+
+//        do{System.out.println("now im in loop i has not incremented "+i);
+//            i++;
+//            System.out.println("im still in the loop i has increment and its value is " + i);
+//        }while(i<10);
+//        System.out.println("the loop has ended and now the value of i is "+i);
+
+        for(int i=0; i<10;i++){
+            System.out.println(i);
+        }
 
 
     }
