@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class syntaxLecture {
     public static void main(String[] args) {
         // Declare variable without initializing
@@ -65,11 +67,19 @@ public class syntaxLecture {
 //        Object o = theNumberThree;
 //        int three = (int) o;
 
-        int x = 4 + 5;
+        int x = 4;
+        int y = 3;
+        x += 5;
+        y += x;
         System.out.println(x);
-
+        System.out.println(y);
         long larger = 3L;
         System.out.println(larger);
+
+        int maxInteger = 2147483647;
+
+        long newMaxInteger = maxInteger ++;
+        System.out.println(newMaxInteger);
 
     }
 }
