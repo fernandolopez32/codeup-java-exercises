@@ -20,11 +20,11 @@ public class ControlFlowExercises {
 //        }
 
 //        long i =2;
-//        System.out.println(i);
 //        do{
-//            i*=i;
 //            System.out.println(i);
-//        } while(i < 65536);
+//            i*=i;
+//
+//        } while(i < 1000000);
 
 //        for(long i = 2; i <= 65536; i*=i){
 //            System.out.println(i);
@@ -51,16 +51,17 @@ public class ControlFlowExercises {
         sc.nextLine();
         String userContinue = "yes";
 
-        while (userContinue.equals("yes")) {
-            System.out.println("Here is your table!\n number | squared | cubed \n ------ | ------- | -----");
+        while (userContinue.equals("yes")||userContinue.equals("y")) {
+            System.out.println("Here is your table!\n\n number | squared | cubed \n\n ------ | ------- | -----");
             for (int i = 1; i <= userNumber; i++) {
                 int square = i * i;
                 int cubed = i * i * i;
-                System.out.println(i + "       | " + square + "       |  " + cubed);
+//                System.out.println(i + "       | " + square + "       |  " + cubed);
+                System.out.printf("%-7d | %-7d | %-5d %n",i,square,cubed);
                 }
             System.out.println("Would you like to continue? Yes/No");
             userContinue = sc.nextLine().toLowerCase();
-            if(userContinue.equals("no")){break;}
+            if(userContinue.equals("no")||userContinue.equals("n")){break;}
             System.out.println("To what number would you like to count now?");
             userNumber = sc.nextInt();
             sc.nextLine();
