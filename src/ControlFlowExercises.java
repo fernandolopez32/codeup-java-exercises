@@ -8,11 +8,11 @@ public class ControlFlowExercises {
 //        }
 //        System.out.println(userString);
 
-        for(int i = 0; i<= 15; i++){
-            String acc = "";
-            acc += i;
-            System.out.println(acc);
-        }
+//        for(int i = 0; i<= 15; i++){
+//            String acc = "";
+//            acc += i;
+//            System.out.println(acc);
+//        }
 
 //        long i =2;
 //        System.out.println(i);
@@ -21,7 +21,9 @@ public class ControlFlowExercises {
 //            System.out.println(i);
 //        } while(i < 65536);
 
-
+        for(long i = 2; i <= 65536; i*=i){
+            System.out.println(i);
+        }
 
 
 
