@@ -7,14 +7,18 @@ public class ControlFlowExercises {
 //            i++;
 //        }
 //        System.out.println(userString);
-        int i = 0;
+        long i =2;
+        System.out.println(i);
         do{
-            if(i%2 ==0){
-            System.out.println(i*i);
-            }
-            i++;
 
-        } while(i <= 100);
+            if(i%2== 0) {
+//                System.out.println(i);
+            }
+            i*=i;
+            System.out.println(i);
+
+
+        } while(i <= 1000000);
 
     }
 }
