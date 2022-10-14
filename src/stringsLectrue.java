@@ -35,6 +35,16 @@ public class stringsLectrue {
         String letsTryThis = "Javier";
         System.out.println(Integer.toHexString(System.identityHashCode(letsTryThis)));
 
+        String theOriginalJavier = "Javier";
+        System.out.println(letsTryThis == theOriginalJavier);
+
+        System.out.println("Whats your name");
+        String username = sc.nextLine();
+        //When comparing String values you need .equals
+        // If you use == it will compare the .identityHashCode
+        System.out.println(Integer.toHexString(System.identityHashCode(username)));
+        System.out.println(alsoJavier.equals(username));
+
 
 
     }// end of main
