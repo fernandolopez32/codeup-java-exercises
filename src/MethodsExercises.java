@@ -20,16 +20,28 @@ public class MethodsExercises {
 
     public static int withinRange(int min, int max){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number from 1-10");
+        System.out.printf("Enter a number from %d to %d %n", min,max);
         int userInput = sc.nextInt();
-        sc.nextLine();
 
         if(userInput < min || userInput > max){
             System.out.println("Input number again");
+            return withinRange(min,max);
         } else {
             return userInput;
         }
-        return userInput;
+    }
+    public static int factorial(int min, int max){
+
+        Scanner sc = new Scanner(System.in);
+        System.out.printf("Enter a number from %d to %d %n", min,max);
+        int userInput = sc.nextInt();
+
+        int factor = 1;
+            for (int i =1; i<userInput+1; i++){
+                System.out.printf("%d!%n",i);
+                factor *= i;
+            }
+            return factor;
     }
 
     public static void main(String[] args) {
@@ -37,7 +49,10 @@ public class MethodsExercises {
 //        System.out.println(subtract(3,3));
 //        System.out.println(multiply(3,4));
 //        System.out.println(divide(3,3));
-        System.out.println(withinRange(1,10));
+//        System.out.println(withinRange(1,10));
+
+
+        System.out.println(factorial(1,10));
 
 
 
