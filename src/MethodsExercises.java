@@ -35,9 +35,11 @@ public class MethodsExercises {
         Scanner sc = new Scanner(System.in);
         System.out.printf("Enter a number from %d to %d %n", min,max);
         int userInput = sc.nextInt();
+
+
         if(userInput < min || userInput > max){
             System.out.println("do you want to continue");
-            return withinRange(min,max);
+            return factorial(min,max);
         }
         int factor = 1;
             for (int i =1; i<userInput+1; i++){
