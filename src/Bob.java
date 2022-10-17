@@ -13,8 +13,8 @@ public class Bob {
                 System.out.println("Whoa, chill out!");
             } else if (userInput.equals("")) {
                 System.out.println("Fine be that way");
-            }else if (userInput.equals("Will computers take over the world?")) {
-                System.out.println("Its inevitable");
+            }else if (userInput.contains("computers") & userInput.contains("over the world")) {
+                System.out.println("Its inevitable that computer take over the world...");
             } else {
                 System.out.println("Whatever");
             }
@@ -23,7 +23,7 @@ public class Bob {
         System.out.println("bye dude");
 
 //        switch (userInput) {
-//            case userInput.endsWith -> System.out.println("One vanilla coming right up");
+//            case userInput.contains("hey") -> System.out.println("One vanilla coming right up");
 //            case "chocolate" -> System.out.println("chocolate coming right up");
 //            case "strawberry" -> System.out.println("strawberry coming right up");
 //            default -> System.out.println("We don't have that");
