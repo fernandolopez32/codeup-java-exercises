@@ -8,5 +8,4 @@ public class Dog {
         System.out.printf("%s says %s",name,sound);
     }
 
-
 }

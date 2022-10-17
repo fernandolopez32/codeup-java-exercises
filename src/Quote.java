@@ -5,7 +5,7 @@ public class Quote {
     public static int randomNumber(){
         return (int) Math.ceil(Math.random()*4);
     }
-    public static String randomeQuote(){
+    public static String randomQuote(){
         if(randomNumber() == 1){
             return "Fortune favors the bold.";
         } else if(randomNumber() == 2){
@@ -18,7 +18,7 @@ public class Quote {
     }
 
     public static void main(String[] args) {
-        System.out.println(randomeQuote());
+        System.out.println(randomQuote());
     }
 
 
