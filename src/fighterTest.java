@@ -15,3 +15,6 @@ public class fighterTest {
         fighter2.battleRoar();
     }
 }
+
+
+
