@@ -112,10 +112,11 @@ public class MethodsExercises {
         System.out.println("Do you want to roll the dice again?");
         if(sc.nextLine().equals("y"))rolldDice();
 
-
     }
 
+public static void highLowGame(){
 
+}
 
 
     public static void main(String[] args) {
@@ -131,3 +132,5 @@ public class MethodsExercises {
 
     }// end of main
 }// end of MethodExercise
+
+
