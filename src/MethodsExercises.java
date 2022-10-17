@@ -1,5 +1,5 @@
-import org.w3c.dom.ls.LSOutput;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class MethodsExercises {
@@ -24,7 +24,7 @@ public class MethodsExercises {
         int userInput = sc.nextInt();
 
         if(userInput < min || userInput > max){
-            System.out.println("Input number again");
+            System.out.println("Invalid, try again");
             return withinRange(min,max);
         } else {
             return userInput;
@@ -33,7 +33,7 @@ public class MethodsExercises {
     public static int factorial(int min, int max){
 
         Scanner sc = new Scanner(System.in);
-        System.out.printf("Enter a number from %d to %d %n", min,max);
+        System.out.printf("Enter a number between %d and %d %n", min,max);
         int userInput = sc.nextInt();
 
 
@@ -43,10 +43,43 @@ public class MethodsExercises {
         }
         int factor = 1;
             for (int i =1; i<userInput+1; i++){
-                System.out.printf("%d!%n",i);
+                System.out.printf("%d! %n" ,i);
                 factor *= i;
             }
             return factor;
+    }
+
+//    public static int factor(int userInput){
+//        Scanner sc = new Scanner(System.in);
+//        userInput = sc.nextInt();
+//        int acc = 1;
+//        for(int i = 1; i<userInput+1; i++){
+//            acc *= i;
+//        }
+//        return acc;
+//    }
+
+    public static double dice(int sides){
+        Scanner sc = new Scanner(System.in);
+        String userResponse;
+        double roll = 0;
+        double roll2 = 0;
+
+        do {
+            System.out.println("How manny sides do your dice have?");
+            sides = sc.nextInt();
+
+            System.out.println("Do you want to roll the dice?");
+            userResponse= sc.next();
+            roll = (Math.random() * sides + 1);
+            roll2 = (Math.random() * sides + 1);
+            System.out.printf("%1.0f and %1.0f are your numbers! %n",roll,roll2);
+
+        }
+        while (userResponse.contains("y"));
+
+
+        return roll;
     }
 
     public static void main(String[] args) {
@@ -54,11 +87,9 @@ public class MethodsExercises {
 //        System.out.println(subtract(3,3));
 //        System.out.println(multiply(3,4));
 //        System.out.println(divide(3,3));
-//        System.out.println(withinRange(1,10));
-
-
-        System.out.println(factorial(1,10));
-
+//        int userInput = withinRange(2,9);
+//        System.out.println(factorial(1,10));
+        System.out.printf("%1.0f",dice(1));
 
 
 
