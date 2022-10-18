@@ -1,4 +1,4 @@
-public class fighter {
+public class Fighter {
 public String name;
 public int hitPoints;
 public int maxDamage;
@@ -10,6 +10,6 @@ public int maxDamage;
         System.out.printf("I am %s and I will destroy you%n",name);
     }
     public int attackRoll(){
-        return d20.rolld20();
+        return D20.rolld20();
     }
 }

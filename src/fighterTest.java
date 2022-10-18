@@ -1,6 +1,6 @@
 public class fighterTest {
     public static void main(String[] args) {
-        fighter fighter1 = new fighter();
+        Fighter fighter1 = new Fighter();
         fighter1.printStats();
         fighter1.name = "Arata";
         fighter1.hitPoints = 17;
@@ -10,7 +10,7 @@ public class fighterTest {
         fighter1.attackRoll();
         System.out.printf("%s attacks and rolls a %d%n",fighter1.name,fighter1.attackRoll());
 
-        fighter fighter2 = new fighter();
+        Fighter fighter2 = new Fighter();
         fighter2.name = "Sozalix";
         fighter2.battleRoar();
         System.out.println(club.maxDamage);
