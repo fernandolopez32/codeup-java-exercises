@@ -1,5 +1,4 @@
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class MethodsExercises {
@@ -28,7 +27,7 @@ public class MethodsExercises {
             return userInput;
         }
     }
-    public static int factorial(int min, int max){
+    public static int calculateFactorial(int min, int max){
 
         Scanner sc = new Scanner(System.in);
         System.out.printf("Enter a number between %d and %d %n", min,max);
@@ -53,7 +52,7 @@ public class MethodsExercises {
             for(int i = 1; i<= userInput; i++){
                 factorial = factorial * i;
             }
-            System.out.println("calculate another factorial? y/n %n");
+            System.out.println("calculate another calculateFactorial? y/n %n");
             String usersChoice = new Scanner(System.in).next();
 
 

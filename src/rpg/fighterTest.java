@@ -1,3 +1,5 @@
+package rpg;
+
 public class fighterTest {
     public static void main(String[] args) {
         Fighter fighter1 = new Fighter();
@@ -14,6 +16,11 @@ public class fighterTest {
         fighter2.name = "Sozalix";
         fighter2.battleRoar();
         System.out.println(club.maxDamage);
+
+        Fighter fernando = new Fighter("Fernando",100,100);
+        fernando.printStats();
+
+
     }
 }
 
