@@ -27,7 +27,7 @@ public class MethodsExercises {
             return userInput;
         }
     }
-    public static int calculateFactorial(int min, int max){
+    public static int factorial(int min, int max){
 
         Scanner sc = new Scanner(System.in);
         System.out.printf("Enter a number between %d and %d %n", min,max);

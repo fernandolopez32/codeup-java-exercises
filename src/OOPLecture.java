@@ -1,8 +1,9 @@
 import animal.Dog;
-
+import quote.Quote;
 public class OOPLecture {
     public static void main(String[] args) {
-        Dog dog= new Dog();
-        System.out.println(dog);
+        Dog Whiskey = new Dog();
+
+        Whiskey.makeNoise();
     }
 }
