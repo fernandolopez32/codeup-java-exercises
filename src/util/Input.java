@@ -43,7 +43,11 @@ public class Input {
     }
 
     public double getDouble(){
-        System.out.println("Enter a number with a decimal:");
+       return scanner.nextDouble();
+    }
+
+    public double getDouble(String prompt){
+        System.out.println(prompt);
        return scanner.nextDouble();
     }
 
