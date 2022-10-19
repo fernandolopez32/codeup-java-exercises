@@ -1,14 +1,19 @@
+import java.lang.reflect.Array;
 import java.util.Random;
 
 public class ServerNameGenerator {
 
-    String[] adjectives = {"beautiful","smooth","heavy","hot","cold","new","old","dirty","wet","big"};
+    public static String[] adjectives = {"beautiful","smooth","heavy","hot","cold","new","old","dirty","wet","big"};
 
-    String[] nouns = {"city","ball","cat","dog","cow","snake","potato","apple","duck","house"};
-    public static String randomString (String[] array){
-        Random generator = new Random();
-        String randomIndex = String.valueOf(generator.nextInt(array.length));
-        return randomIndex;
+    public static String[] nouns = {"city","ball","cat","dog","cow","snake","potato","apple","duck","house"};
+    public static String randomString (String[] array,String[]array2){
+        int number = (int)(Math.random()*array.length);
+        int number2 = (int)(Math.random()* array2.length);
+        System.out.println("Here is your server name:");
+        return array[number]+"--"+array2[number2];
     }
 
+    public static void main(String[] args) {
+        System.out.println(randomString(adjectives,nouns));
+    }
 }

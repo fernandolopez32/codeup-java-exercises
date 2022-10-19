@@ -14,6 +14,8 @@ public class ArraysTest {
             people[2] = new Person("Aaron");
             people[3] = new Person("Mason");
 
+            Person[] people3 = {new Person("tony"), new Person("javi")};
+
         for (Person person : people) {
             System.out.println(person.getName());
         }
