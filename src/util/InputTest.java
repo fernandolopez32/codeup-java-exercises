@@ -8,10 +8,10 @@ public class InputTest {
 //        Input.getInt(1,10);
         Input input = new Input();
 //        System.out.println(input.getString());
-        System.out.println(input.yesNo());
+//        System.out.println(input.yesNo());
 //        System.out.println(input.getInt(2,6));
-//        System.out.println(input.getInt(2, 29));
 //        System.out.println(input.getInt());
-
+//        System.out.println(input.getDouble());
+        System.out.println(input.getDouble()+" Scan your next item");
     }// end of main
 }// end of InputTest class

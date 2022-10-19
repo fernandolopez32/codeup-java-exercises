@@ -10,13 +10,13 @@ public class Person {
     }
 
     public void sayHello(){
-        System.out.println("Hello "+this.name);
+        System.out.println("Hello "+name);
     }
-    public Person (String name){
-        this.setName(name);
+    public Person (){}
+
+    public Person(String name) {
+        this.name = name;
     }
-
-
 }
 
 

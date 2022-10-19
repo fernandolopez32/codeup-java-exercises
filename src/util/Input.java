@@ -22,11 +22,13 @@ public class Input {
     }
 
     public boolean yesNo(){
-        String userInput = scanner.nextLine().toLowerCase();
-        return userInput.contains("y");
+        System.out.println("yes or no?");
+        String userInput = scanner.next().toLowerCase();
+        return userInput.equalsIgnoreCase("y")||userInput.equalsIgnoreCase("yes");
     }
 
     public int getInt(){
+        System.out.println("Enter an Integer:");
         return scanner.nextInt();
     }
 
@@ -41,17 +43,19 @@ public class Input {
     }
 
     public double getDouble(){
+        System.out.println("Enter a number with a decimal:");
        return scanner.nextDouble();
     }
 
+
+    // recursive if the number is within the range
     public double getDouble(double min, double max){
         System.out.printf("Enter a number from %f to %f %n", min,max);
         double userInput = scanner.nextDouble();
 
         if(userInput < min || userInput > max){
-            System.out.printf("%.2f is your number %n",userInput);
-            return userInput;
-        } else{ return getDouble(min,max);}
+            return getDouble(min,max);
+        } else{ return userInput;}
 
     }
 
