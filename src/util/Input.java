@@ -41,7 +41,10 @@ public class Input {
     }
 
     public double getDouble(){
-        return scanner.nextDouble();
+        double dub = scanner.nextDouble();
+        scanner.next();
+        return dub;
+
     }
 
     public double getDouble(double min, double max){
