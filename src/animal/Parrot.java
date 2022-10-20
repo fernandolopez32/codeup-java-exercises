@@ -7,7 +7,9 @@ public class Parrot extends Bird{
         System.out.println("Knowledge is power");
     }
 
-
+    public void echo(String input){
+        System.out.println(input);
+    }
 
 
 

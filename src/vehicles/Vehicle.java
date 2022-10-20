@@ -21,6 +21,10 @@ public class Vehicle {
        return  "Room room";
     }
 
+    public void alarm(){
+        System.out.println("wooooo woooooo wooooo");
+    }
+
     public Vehicle(){}
 
     public Vehicle (String name){
