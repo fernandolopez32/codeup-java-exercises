@@ -14,8 +14,6 @@ public class Input {
     }
 
 
-
-
     public String getString(){
         return scanner.nextLine();
     }
@@ -37,6 +35,18 @@ public class Input {
 
     public int getInt(int min, int max){
         System.out.printf("Enter a number from %d to %d %n", min,max);
+        int userInput = scanner.nextInt();
+
+        if(userInput < min | userInput > max){
+            System.out.printf("%d is not within the range bro%n",userInput);
+            return getInt(min,max);
+        } else{ return userInput;}
+    }
+    public int getInt(String prompt){
+        System.out.println(prompt);
+        int min = getInt();
+        int max = getInt();
+        System.out.printf("Your parameters are from %d to %d %n", min,max);
         int userInput = scanner.nextInt();
 
         if(userInput < min | userInput > max){
