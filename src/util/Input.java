@@ -1,5 +1,6 @@
 package util;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Input {
@@ -83,57 +84,4 @@ public Input(){
 }
 
 
-
-//    private static Scanner scanner = new Scanner(System.in);
-//
-//    public static String getString(){
-//        String potatoes = scanner.nextLine();
-//        System.out.println(potatoes);
-//        return potatoes;
-//    }
-//
-//    public static boolean yesNo(){
-//        String userInput = getString().toLowerCase();
-//        if(userInput.contains("y")) {
-//            System.out.println("true");
-//            return true;
-//        }
-//        else {
-//            System.out.println("false");
-//        }
-//        return true;
-//    }
-//
-//    public static int getInt(int min, int max){
-//        System.out.printf("Enter a number from %d to %d %n", min,max);
-//        int userInput = scanner.nextInt();
-//
-//        if(userInput < min || userInput > max){
-//            System.out.printf("%d is your number %n",userInput);
-//            return userInput;
-//        } else{ return getInt(min,max);}
-//    }
-//
-//    public static double getDouble(double min, double max){
-//        System.out.printf("Enter a number from %f to %f %n", min,max);
-//        double userInput = scanner.nextDouble();
-//
-//        if(userInput < min || userInput > max){
-//            System.out.printf("%.2f is your number %n",userInput);
-//            return userInput;
-//        } else{ return getDouble(min,max);}
-//
-//    }
-//
-//    public static int getInt(){
-//        int userInput = scanner.nextInt();
-//        System.out.println(userInput);
-//        return userInput;
-//    }
-//
-//
-
-
-
 }// end of Input class
-
