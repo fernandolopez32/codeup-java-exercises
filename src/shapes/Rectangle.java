@@ -22,7 +22,7 @@ public class Rectangle{
         this.width = width;
     }
 
-    public double gertPerimeter(){
+    public double getPerimeter(){
         return this.getLength() *2 + this.getWidth() *2;
     }
 
