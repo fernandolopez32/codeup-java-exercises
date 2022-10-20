@@ -1,5 +1,9 @@
 package movies;
 import util.Input;
+
+import javax.lang.model.element.NestingKind;
+import java.util.zip.ZipInputStream;
+
 public class MoviesApplication {
 
     public static void getAllMoviesFromCategory(String category, Movie[] movies){
@@ -10,6 +14,17 @@ public class MoviesApplication {
             }
         }
     }
+
+
+        public static Movie[] addMovie(Movie[] oldArray,Movie newMovie){
+            Movie[] NewArray = new Movie[oldArray.length+1];
+
+            for(int i=0; i < oldArray.length; i++){
+                NewArray[i] = oldArray[i];
+            }
+            NewArray[NewArray.length-1]=newMovie;
+            return NewArray;
+        }
 
     public static void main(String[] args) {
         Input input = new Input();
@@ -57,7 +72,10 @@ public class MoviesApplication {
                     getAllMoviesFromCategory("sifi",movies);
                     break;
                 case "6":
-
+                    String title = input.getString("What is the title of your new movie?");
+                    String category = input.getString("Enter category of movie");
+                    Movie NewMovie = new Movie(title.toLowerCase(),category.toLowerCase());
+                    movies = addMovie(movies, NewMovie);
                     break;
                 default:
                     System.out.println("DO BETTER");
