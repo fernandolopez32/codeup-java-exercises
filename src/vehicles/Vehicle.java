@@ -16,8 +16,15 @@ public class Vehicle {
         this.name = name;
     }
 
-    public void makeNoise(){
-        System.out.println("Room room");
+
+    public String makeNoise(){
+       return  "Room room";
+    }
+
+    public Vehicle(){}
+
+    public Vehicle (String name){
+         this.setName(name);
     }
 
 

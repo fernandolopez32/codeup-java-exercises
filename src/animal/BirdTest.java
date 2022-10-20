@@ -10,6 +10,8 @@ public class BirdTest {
         TweetyBird goldfinch = new TweetyBird();
         goldfinch.makeNoise();
 
+        Parrot parrot = new Parrot();
+        parrot.makeNoise();
 
     }
 
