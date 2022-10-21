@@ -23,7 +23,9 @@ public class Bird {
     }
 
 
-
+public Bird(){
+    System.out.println("A bird just got constructed");
+}
 
 
 }// end of bird
