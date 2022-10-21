@@ -9,6 +9,6 @@ public interface WritesCode {
 
 //    // could return null!
 //    StackOverflowLink searchForAnswer(Bug bug);
-//
+
 //    BrokenKeyboard smashKeyboard(Keyboard k);
 }
