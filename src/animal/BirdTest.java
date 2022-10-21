@@ -48,7 +48,7 @@ public class BirdTest {
 
 //        Bird.birdSounds(birds);
 
-        Parrot parrot1 = new Parrot();
+        Parrot parrot1 = new Parrot("Polly");
 
 //        System.out.println(argumentitiveOrnithol("Psittaciforms", "Peniscaforms"));
 

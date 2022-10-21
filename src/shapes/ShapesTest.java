@@ -7,5 +7,16 @@ public class ShapesTest {
 //        System.out.println(square.getPerimeter());
 //        System.out.println(square.getArea());
 
+//        Quadrilateral sq = new Square();
+//        sq.setLength(5);
+//        System.out.println(sq.getArea());
+
+        Quadrilateral rect = new Rectangle(3,5);
+        System.out.println(rect.getArea());
+
+//        Quadrilateral myShape = new Square(5);
+//        System.out.println(myShape.getLength());
+
     }
+
 }
