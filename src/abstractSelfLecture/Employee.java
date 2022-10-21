@@ -17,4 +17,3 @@ abstract class Employee {
 
     public Employee() {}
 }
-
