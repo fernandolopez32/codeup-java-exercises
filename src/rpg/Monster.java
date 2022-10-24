@@ -1,6 +1,7 @@
 package rpg;
 
 public class Monster {
+//        implements Comparable<Monster> {
 
     private String name;
     private int armorClass;
@@ -50,4 +51,12 @@ public class Monster {
         this.damage = damage;
         this.name = name;
     }
-}
+
+//    @Override
+//    public int compareTo(Monster m1, Monster m2){
+//            return Integer.compare(m2.getHitPoints(), m1.getHitPoints());
+//        }
+
+
+    }// end of monster
+
