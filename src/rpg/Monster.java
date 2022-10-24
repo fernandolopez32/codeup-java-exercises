@@ -43,6 +43,14 @@ public class Monster {
         return name;
     }
 
+//    public static void generateMonster(){
+//        Monster orc = new Monster(13,15,9,"Orc");
+//        Monster ogre = new Monster(11,59,13,"Ogre");
+//        Monster blueDragon = new Monster(19, 225,23,"Blue Dragon");
+//        Monster frostGiant = new Monster(15,138,25,"Frost Giant");
+//        Monster goblin = new Monster(15,7,5,"Goblin");
+//        Monster werewolf = new Monster(11,58,7,"Werewolf");
+//    }
     public Monster(){}
 
     public Monster(int armorClass, int hitPoints, int damage, String name) {
