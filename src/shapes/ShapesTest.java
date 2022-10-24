@@ -1,5 +1,7 @@
 package shapes;
 
+import java.sql.SQLOutput;
+
 public class ShapesTest {
     public static void main(String[] args) {
 
@@ -27,6 +29,13 @@ public class ShapesTest {
         sqr.setLength(5);
         System.out.println(sqr.getPerimeter());
         System.out.println(sqr.getArea());
+
+        Measurable myShape;
+
+        myShape = new Square(5);
+        System.out.println(myShape.getArea());
+        System.out.println(myShape.getPerimeter());
+
 
 
     }
