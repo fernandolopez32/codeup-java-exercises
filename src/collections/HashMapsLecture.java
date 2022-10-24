@@ -82,6 +82,24 @@ public class HashMapsLecture {
             System.out.printf("The %s has %d and armor class of %d  and does %d damage %n", monster,monster.getHitPoints(), monster.getArmorClass(), monster.getDamage());
         });
 
+        // convert to tree map to sort by key
+        System.out.println("----------tree map forEach");
+        Map<String,Monster> monsterTreeMap = new TreeMap<>(monsterHashMap);
+        monsterTreeMap.forEach((key,monster) -> {
+            System.out.printf("The %s has %d and armor class of %d  and does %d damage %n", monster,monster.getHitPoints(), monster.getArmorClass(), monster.getDamage());
+        });
+
+        Object[] monstersArray = monsterHashMap.values().toArray();
+        for(Object monster: monstersArray){
+            int hitPoints = ((Monster) monster).getHitPoints();
+            System.out.println(hitPoints);
+        }
+
+
+        Monster[] monstersArray2 = monsterHashMap.values().toArray(new Monster[0]);
+        for (Monster monster: monstersArray2){
+            System.out.println(monster.getName()+" has " + monster.getHitPoints());
+        }
 
 
     }// end of main
