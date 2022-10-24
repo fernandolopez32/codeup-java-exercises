@@ -11,12 +11,23 @@ public class ShapesTest {
 //        sq.setLength(5);
 //        System.out.println(sq.getArea());
 
-        Quadrilateral rect = new Rectangle(3,5);
-        System.out.println(rect.getArea());
+//        Quadrilateral rect = new Rectangle(3,5);
+//        System.out.println(rect.getArea());
 
 //        Quadrilateral myShape = new Square(5);
 //        System.out.println(myShape.getLength());
 
-    }
+        Rectangle rect = new Rectangle();
+        rect.setWidth(5);
+        rect.setLength(4);
+        System.out.println(rect.getPerimeter());
+        System.out.println(rect.getArea());
 
+        Quadrilateral sqr = new Square();
+        sqr.setLength(5);
+        System.out.println(sqr.getPerimeter());
+        System.out.println(sqr.getArea());
+
+
+    }
 }
