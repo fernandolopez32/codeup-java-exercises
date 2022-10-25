@@ -29,6 +29,14 @@ public class Input {
         return userInput.equalsIgnoreCase("y")||userInput.equalsIgnoreCase("yes");
     }
 
+    public boolean yesNo(String prompt){
+        System.out.println(prompt);
+        System.out.println("yes or no?");
+        String userInput = scanner.next().toLowerCase();
+        return userInput.equalsIgnoreCase("y")||userInput.equalsIgnoreCase("yes");
+    }
+
+
     public int getInt(){
         System.out.println("Enter an Integer:");
         return scanner.nextInt();
@@ -82,6 +90,10 @@ public class Input {
 public Input(){
         scanner = new Scanner(System.in);
 }
+
+
+
+
 
 
 }// end of Input class
