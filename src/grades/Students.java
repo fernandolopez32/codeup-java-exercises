@@ -6,6 +6,13 @@ public class Students {
 
     private ArrayList<Integer> Grades;
 
+    public ArrayList<Integer> getGrades() {
+        return Grades;
+    }
+
+//    public void setGrades(ArrayList<Integer> grades) {
+//        Grades = grades;
+//    }
 
     private String name;
 

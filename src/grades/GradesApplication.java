@@ -27,6 +27,7 @@ public class GradesApplication {
         students.put("SuperMegaMan", stephen);
 
 
+
         // making hashmap into a list
         List<String> gitHubUserNames = new ArrayList<>(students.keySet().stream().toList());
 
