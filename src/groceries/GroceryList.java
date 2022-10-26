@@ -1,5 +1,7 @@
 package groceries;
 
+import java.util.ArrayList;
+
 public class GroceryList {
     protected  String category;
 
@@ -12,15 +14,13 @@ public class GroceryList {
     }
 
 
-    protected String[] categories;
+    protected ArrayList<String> categories;
 
-    public String[] getCategories() {
+    public ArrayList<String> getCategories() {
         return categories;
     }
 
-    public void setCategories(String[] categories) {
+    public void setCategories(ArrayList<String> categories) {
         this.categories = categories;
     }
-
-
 }

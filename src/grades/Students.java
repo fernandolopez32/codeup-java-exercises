@@ -10,9 +10,9 @@ public class Students {
         return Grades;
     }
 
-//    public void setGrades(ArrayList<Integer> grades) {
-//        Grades = grades;
-//    }
+    public void setGrades(ArrayList<Integer> grades) {
+        Grades = grades;
+    }
 
     private String name;
 
@@ -51,4 +51,7 @@ public class Students {
         this.Grades = new ArrayList<>();
         this.name = name;
     }
-}
+
+
+
+}// end of Students

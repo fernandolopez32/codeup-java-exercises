@@ -26,8 +26,6 @@ public class GradesApplication {
         students.put("Ayronero", aaron);
         students.put("SuperMegaMan", stephen);
 
-
-
         // making hashmap into a list
         List<String> gitHubUserNames = new ArrayList<>(students.keySet().stream().toList());
 
@@ -36,10 +34,7 @@ public class GradesApplication {
         System.out.printf("Welcome!%n%nHere are the GitHub usernames of our students:%n%n%s%n", gitHubUserNames);
         String userSelect;
 
-
-
         String userResp;
-
 
         do {
             userSelect = input.getString("What student would you like to see more information on?");
@@ -59,9 +54,6 @@ public class GradesApplication {
         if (!userResp.equals("y")){
             System.out.println("Goodbye, and have a wonderful day!");
         }
-
-
-
 
 
     }// main
