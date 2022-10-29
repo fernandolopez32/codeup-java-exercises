@@ -110,6 +110,9 @@ public class FileIoPractice {
 //    //
 //    //- BONUS: create a static method, `deleteEntry`, that takes in the name of someone (a string) and when invoked, rewrites a new list to the `people.txt` file
 //    //  with all entries except the passed in name
+
+
+
 //    public static void main(String[] args) throws IOException {
 //        Path p = Paths.get("src","fileIo","people.txt");
 //        boolean pExist = Files.exists(p);

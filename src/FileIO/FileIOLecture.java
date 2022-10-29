@@ -33,7 +33,7 @@ public class FileIOLecture {
 
         // ============================ FILE METHODS
 
-//        Path fileLecturePath = Paths.get("src","fileIoLecture");
+        Path fileLecturePath = Paths.get("src","fileIoLecture");
 //
 //        System.out.println(Files.exists(fileLecturePath));
 //        System.out.println(Files.exists(Paths.get("bob.txt")));
@@ -55,9 +55,9 @@ public class FileIOLecture {
 //
 //        }
 ////
-//        if (Files.notExists(dataFile)) {
+//        if (Files.notExists(p)) {
 //            try {
-//                Files.createFile(dataFile);
+//                Files.createFile(p);
 //            } catch (IOException e) {
 //                e.printStackTrace();
 //            }
@@ -66,22 +66,22 @@ public class FileIOLecture {
 
         // ============================ READING FILES
 
-//        Path p = Paths.get(  "test.txt");
+        Path p = Paths.get(  "test.txt");
 //
 //
-//        List<String> lines = new ArrayList<>();
+        List<String> lines = new ArrayList<>();
 ////
-//        try {
-//            lines = Files.readAllLines(p);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            lines = Files.readAllLines(p);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 ////
-//        System.out.println(lines);
+        System.out.println(lines);
 ////
-//        for (String name : lines) {
-//            System.out.println("Hello, " + name + "!");
-//        }
+        for (String name : lines) {
+            System.out.println("Hello, " + name + "!");
+        }
 
 
 
@@ -101,7 +101,7 @@ public class FileIOLecture {
 
         // ============================ WRITING FILES
 
-        Path p = Paths.get( "test.txt");
+//        Path p = Paths.get( "test.txt");
 
         List<String> newNames = Arrays.asList("John", "Fred", "Cathy");
         try {
@@ -110,16 +110,16 @@ public class FileIOLecture {
             e.printStackTrace();
         }
 //
-//        List<String> names = new ArrayList<>();
-//        names.add("Tim");
-//        names.add("Sally");
-//        names.add("Mary");
+        List<String> names = new ArrayList<>();
+        names.add("Tim");
+        names.add("Sally");
+        names.add("Mary");
 //
-//        try {
-//            Files.write(p, names, StandardOpenOption.APPEND);
-//        } catch(IOException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            Files.write(p, names, StandardOpenOption.APPEND);
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
 
 
     }
