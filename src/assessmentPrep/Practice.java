@@ -18,10 +18,13 @@ public class Practice {
     }
     //3. Create a public static method *average* in the Practice class that takes an array of integers and returns their average as a double.
 
-//    public static int[] average (){
-//
-//        return i
-//    }
+    public static double average (double[]numbers){
+        double total = 0;
+        for(double number:numbers){
+            total += number;
+        }
+        return total/ numbers.length;
+    }
 
 
     public static void main(String[] args) {
