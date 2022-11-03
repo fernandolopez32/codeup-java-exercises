@@ -36,5 +36,8 @@ public class Fibinacci {
     public static void main(String[] args) {
         long start = System.currentTimeMillis();
         System.out.println(fib(10));
+        System.out.println("""
+                this is print line
+                """);
     }
 }
